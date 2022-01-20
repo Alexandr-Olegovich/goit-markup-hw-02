@@ -185,8 +185,7 @@ body {
 footer {
   background: #2f303a;
 }
-.foot-color-another {
-    font-style: normal;
+.foot-color-another {    
   color: var(--white-color);
 }
 .foot-color {
