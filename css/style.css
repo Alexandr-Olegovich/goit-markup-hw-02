@@ -157,7 +157,7 @@ body {
   color: var(--grey-color);
 }
 .work-name {
-  font-family: inherit; 
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -185,7 +185,7 @@ body {
 footer {
   background: #2f303a;
 }
-.foot-color-another {    
+.foot-color-another {
   color: var(--white-color);
 }
 .foot-color {
