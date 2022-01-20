@@ -1,108 +1,207 @@
+/* универсальный селектор для всех */
+* {
+  box-sizing: border-box;
+}
 /*переменние основніх цветов*/
 :root {
-    --blue-color:#2196F3;
-    --white-color:#FFFFFF;
-    --grey-color:#757575;
-    --black-color:#212121;
+  --blue-color: #2196f3;
+  --white-color: #ffffff;
+  --grey-color: #757575;
+  --black-color: #212121;
 }
 /* header */
 /*logo стиль*/
-.logo{font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 31px;
-letter-spacing: 0.03em;
-color: var(--blue-color);}
-.logo-element{color:var(--black-color)}
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--blue-color);
+}
+.logo-element {
+  color: var(--black-color);
+}
 /* logo end */
-header{background-color: var(--white-color);}
-.nav-word{font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: calc (16 / 14);
-letter-spacing: 0.02em;
-color: var(--black-color);}
-.nav-word:hover , .nav-word:focus {
-    color: var(--blue-color); }
-.link-style{ font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: calc (16 / 14);
-letter-spacing: 0.02em;
-color: var(--grey-color);}
-.link-style:hover, .link-style:focus{
-    color: var(--blue-color);}
-a{text-decoration: none;}
-ul{list-style: none;}
-h1{font-family: inherit;
-font-weight: 900;
-font-size: 44px;
-line-height: calc(60 / 44);
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--white-color);}
-.section-head{background-color: #2F303A;}
+header {
+  background-color: var(--white-color);
+}
+.navigation-one {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+}
+.navigation-one:hover,
+.navigation-one:focus,
+a:hover,
+a:focus {
+  color: var(--blue-color);
+}
+.link-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
+}
+.link-style:hover,
+.link-style:focus {
+  color: var(--blue-color);
+}
+a {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--grey-color);
+}
+ul {
+  list-style: none;
+}
+.section-head {
+  background-color: #2f303a;
+}
 /* header end */
 /* Body_____________________________________________________________________________Body */
 /* кнопки */
-.press-it{
-font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: calc(26 / 16);
-text-align: center; 
-letter-spacing: 0.03em;}
+.portfolio-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+  background-color: #f5f4fa;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+.press-it {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
 
-.press-it:hover , .press-it:focus {
-    color: var(--white-color);
-    background-color: var(--blue-color);}
- /* кнопки */   
-body {background-color:#E5E5E5;
-    font-family: roboto; sans-serif
-     font-weight: 700;
-    color:var(--black-color);}
-    .nav-word{font-family: inherit;
-      font-style: inherit;
-       font-weight: 500;
-       font-size: 16px;
-       line-height: calc (30 / 16);
-       letter-spacing: 0.03em;
-       color: var(--black-color);}
-    .description{font-family: inherit;
-      font-style: inherit;
-       font-weight: 500;
-       font-size: 16px;
-       line-height: calc (30 / 16);
-       letter-spacing: 0.03em;
-       color: var(--grey-color);}
-       p{font-family: inherit;
-         font-style: normal;
-         font-weight: normal;
-         font-size: 14px;
-         line-height: calc(24 / 14);
-         letter-spacing: 0.03em;
-         color: var(--grey-color);}
-    h2{font-size: 36px;
-     line-height: calc (42 /36);
-     text-align: center;
-    letter-spacing: 0.03em;}    
-    h3{font-family: inherit;   
-       font-size: 18px;
-       line-height: calc (36 / 18);
-       letter-spacing: 0.06em;}
-       
+.press-it:hover,
+.press-it:focus {
+  color: var(--grey-color);
+  background-color: #f5f4fa;
+}
+.portfolio-button,
+.press-it {
+  cursor: pointer;
+}
+/* кнопки стоп*/
+body {
+  font-family: roboto, sans-serif;
+  color: var(--black-color);
+}
+.hero-one {
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.nav-word {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.profession {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}
+.description {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}
+.description-port {
+  font-style: normal;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}
+.work-name {
+  font-family: inherit; 
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.hero-two {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc (42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+.hero-three {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
 /* body end ____________________________________________________________________body-end */
 /*Footer */
- footer{background: #2F303A;}
- .foot-color{color: var(--grey-color);}
- .foot-color:hover , .foot-color:focus {
-     color:var(--white-color); }
- .logo-foot-element{color: var(--white-color);}
-
-
-
+footer {
+  background: #2f303a;
+}
+.foot-color-another {
+    font-style: normal;
+  color: var(--white-color);
+}
+.foot-color {
+  font-style: normal;
+  font-family: roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.foot-color:hover,
+.foot-color:focus {
+  color: var(--white-color);
+}
+.logo-foot-element {
+  color: var(--white-color);
+}
