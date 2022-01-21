@@ -1,13 +1,13 @@
-/* универсальный селектор для всех */
-* {
-  box-sizing: border-box;
-}
 /*переменние основніх цветов*/
 :root {
   --blue-color: #2196f3;
   --white-color: #ffffff;
   --grey-color: #757575;
   --black-color: #212121;
+}
+body {
+  font-family: roboto, sans-serif;
+  color: var(--black-color);
 }
 /* header */
 /*logo стиль*/
@@ -23,37 +23,30 @@
   color: var(--black-color);
 }
 /* logo end */
-header {
+.start {
   background-color: var(--white-color);
 }
 .navigation-one {
-  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--black-color);
 }
-.navigation-one:hover,
-.navigation-one:focus,
-a:hover,
-a:focus {
+.link-head-one:hover,
+.link-head-one:focus,
+.link-head:hover,
+.link-head:focus,
+.link-foot:hover,
+.link-foot:focus,
+.link-foot-color:hover,
+.link-foot-color:focus {
   color: var(--blue-color);
 }
-.link-style {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--grey-color);
-}
-.link-style:hover,
-.link-style:focus {
-  color: var(--blue-color);
-}
-a {
-  font-family: inherit;
-  font-style: normal;
+.link-head,
+.link-head-one,
+.link-foot,
+.link-foot-color {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -61,9 +54,14 @@ a {
   text-decoration: none;
   color: var(--grey-color);
 }
+.link-head-one{color: var(--black-color);}
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
+
 .section-head {
   background-color: #2f303a;
 }
@@ -71,7 +69,6 @@ ul {
 /* Body_____________________________________________________________________________Body */
 /* кнопки */
 .portfolio-button {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -86,7 +83,6 @@ ul {
   background-color: var(--blue-color);
 }
 .press-it {
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -108,12 +104,7 @@ ul {
   cursor: pointer;
 }
 /* кнопки стоп*/
-body {
-  font-family: roboto, sans-serif;
-  color: var(--black-color);
-}
 .hero-one {
-  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -123,8 +114,6 @@ body {
   color: var(--white-color);
 }
 .nav-word {
-  font-family: inherit;
-  font-style: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -132,8 +121,6 @@ body {
   color: var(--black-color);
 }
 .profession {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -141,23 +128,18 @@ body {
   color: var(--grey-color);
 }
 .description {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
 .description-port {
-  font-style: normal;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
 .work-name {
-  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -166,40 +148,33 @@ body {
 .hero-two {
   font-weight: 700;
   font-size: 36px;
-  line-height: calc (42 / 36);
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
 }
 .hero-three {
-  font-family: inherit;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;  
 }
 
 /* body end ____________________________________________________________________body-end */
 /*Footer */
-footer {
+.foot {
   background: #2f303a;
 }
-.foot-color-another {
+.link-foot-color {
   color: var(--white-color);
 }
 .foot-color {
-  font-style: normal;
   font-family: roboto;
   font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-.foot-color:hover,
-.foot-color:focus {
-  color: var(--white-color);
 }
 .logo-foot-element {
   color: var(--white-color);
